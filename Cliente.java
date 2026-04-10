@@ -45,16 +45,26 @@ public class Cliente extends Usuario {
         }    
     }
 
-    public void reservarJuegos(){
-        //REVISAR MAS ADELANTE
+    public void reservarJuegos(String juego1, String juego2, Boolean mesareservada){
+        if (mesareservada == true) {
+            System.out.println("Se han reservado los juegos " + juego1 + " y " + juego2 + " para la mesa " + mesareservada);
+        } else {
+            System.out.println("La mesa no es válida para reservar juegos.");
+        }
+        //Revisar igual
     }
 
-    public List<String> juegoDisponibles(){
-        //REVISAR MAS ADELANTE
+    public List<String> juegoDisponibles(String JuegosDisponibles){
+        for (Juego juego : Juego.JuegosDisponibles()) {
+            System.out.println(juego.getNombre());
+            List<String> Lista = new ArrayList<>();
+                for (int i = 0; i < Juego.JuegosDisponibles().length; i++) {
+            Lista.add(Juego.JuegosDisponibles()[i].getNombre());
+            }
         return new ArrayList<>();
     }
 
-    public void regresarJuego(){
+    public void regresarJuego(int mesaproviene, String juego){
         //REVISAR MAS ADELANTE
     }
 

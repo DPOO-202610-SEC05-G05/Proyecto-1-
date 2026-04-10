@@ -121,4 +121,9 @@ public class Juego {
     public void setCantidadPrestamoLibre(int newInt){
         this.cantidadPrestamoLibre = newInt;
     }
+
+    public static Juego[] JuegosDisponibles() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'JuegosDisponibles'");
+    }
 }
